@@ -1,2 +1,5 @@
 # BestGroupProject
-Jesse, Rob, Jeremy, Zach
+* Jesse
+* Rob
+* Jeremy
+* Zach
