@@ -6,7 +6,7 @@
 * Zach
 This project is for a CI/CD pipeline
 
-Overview - describe the project
+Overview - Describe how project is
 
 
 
