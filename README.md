@@ -4,23 +4,36 @@
 * Rob
 * Jeremy
 * Zach
-test
 This project is for a CI/CD pipeline
-.yml file for continuous integration
-
 
 Overview - describe the project
 
 
-Setup - What does someone do to make it run?
-Running Locally-
 
-Running With Docker- 
-
-Running on AWS-
+SETUP-
+RUNNING LOCALLY- 
+Steps:
 
 
-Technologies Used - Provide a links to the homepage for each technology used.
+
+
+RUNNING WITH DOCKER- 
+Steps:
+1. cd into your preferred directory.
+2. clone the repository into the directory. (git clone <repository>)
+3. cd into the repository. (cd <repository name>)
+4. create a python virtual enviorment. (python3 -m venv .venv)
+5. Activate the virtual enviorment. (source .venv/bin/activate)
+6. Run the up script to start the web server (./up)
+7. go to localhost:8000 to see the live web server
+8. Run the down script to shut down the web server (./down)
+
+RUNNING WITH AWS-
+Steps:
+
+
+
+TECHNOLOGIES USED- 
 1. GitHub- https://github.com/
 2. GitHub Actions- https://github.com/features/actions
 3. Docker- https://www.docker.com/
@@ -28,11 +41,8 @@ Technologies Used - Provide a links to the homepage for each technology used.
 5. Python Virtual Enviorment- https://docs.python.org/3/library/venv.html
 6. Mac OS Command Terminal
 
-Background - Provide links to the sources you looked at to get your system working. This would help another person reproduce your work.
+BACKGROUND- 
 1. GitHub Actions- https://github.com/features/actions
 2. SSH to an EC2 instance (AWS)- https://labs.vocareum.com/web/2275840/1605208.0/ASNLIB/public/docs/lang/en-us/README.html#ssh
 3. SSH on mac (AWS)- https://labs.vocareum.com/web/2275840/1605208.0/ASNLIB/public/docs/lang/en-us/README.html#sshmac
-
-
-As much as possible, the process to launch your application should be automated in appropriate scripts and files (Dockerfile, scripts, etc.)
 
