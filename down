@@ -1,0 +1,3 @@
+docker rm -f server 
+docker rm -f collector
+docker rm -f redis
