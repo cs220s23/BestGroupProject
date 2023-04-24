@@ -1,9 +1,11 @@
+"""
+Collects covid data to be used within the web server and stored in a redis database
+"""
+import time
+import os
 import requests
 import redis
-import time
 import dotenv
-import os
-
 
 dotenv.load_dotenv()
 
@@ -20,5 +22,5 @@ while True:
 
     r.set('confirmed', confirmed)
     # Flush the buffer to ensure it is printed immediately
-    print('Saved {}. Sleeping for 15 minutes'.format(confirmed), flush=True)
+    print(f'Saved {confirmed}. Sleeping for 15 minutes', flush=True)
     time.sleep(15 * 60)
