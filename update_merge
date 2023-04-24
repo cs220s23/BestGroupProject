@@ -1,0 +1,3 @@
+./down
+git pull origin main
+./up
