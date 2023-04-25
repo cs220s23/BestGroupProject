@@ -1,4 +1,4 @@
-name: Close Pull Request
+name: Merge Pull Request
 
 # only trigger on pull request closed events
 on:
@@ -14,13 +14,10 @@ jobs:
     - name: notifying the console that merge has occured
       run: |
         echo PR #${{ github.event.number }} has been merged
-    - name: secret
-      run: |
-        echo ${{secrets.SSH_KEY}} 
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: 54.227.15.208
+        host: ${{ vars.AWS_IP}}
         username: ec2-user
         key: ${{secrets.SSH_KEY}} 
         script: whoami
