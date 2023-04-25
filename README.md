@@ -35,9 +35,9 @@ Steps:
 4. Under "Advanced details" in the "User data" section add contents of aws_user_data file
 5. Launch the instance!
 Due to the fact that we are running on temporary instances, another step is necessary
-6. Copy Public IPv4 DNS or address and update AWS_IP github repo variable
+6. Copy Public IPv4 DNS or address and update AWS_IP github repo variable to have deploy functionality
 7. Go to previously copied IPv4 DNS or address to see the live server!
-8. Run the down script to shut down the web server.
+8. Run the down script to shut down the web server through ssh, or alternatively stop the instance.
 
 
 
