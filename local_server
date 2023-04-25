@@ -1,0 +1,15 @@
+cd server
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+COPY server.env .env
+
+source .venv/bin/activate
+
+python server.py
+
+echo "server up"
