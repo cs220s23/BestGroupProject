@@ -7,13 +7,9 @@
 
 This project is for a CI/CD pipeline
 
-Overview - Describe how project is
+Overview - The covid counter app was modified and made to run locally, on a virtual machine (docker) and in the cloud (aws).
+When there is a pull request to the main repo it is first ran through github actions where it goes through a linter and CI and then gets approved for CD. We can then call the update_merge script that will take dowmn the server update the repo and bring the server back up.
 
-
-
-SETUP-
-RUNNING LOCALLY- 
-Steps:
 
 
 RUNNING WITH DOCKER- 
