@@ -32,8 +32,9 @@ Steps:
 5. Launch the instance!
 Due to the fact that we are running on temporary instances, another step is necessary
 6. Copy Public IPv4 DNS or address and update AWS_IP github repo variable to have deploy functionality
-7. Go to previously copied IPv4 DNS or address to see the live server!
-8. Run the down script to shut down the web server through ssh, or alternatively stop the instance.
+7. Copy labsuser.pem contents (/.ssh/labsuser.pem) to SSH_KEY secret in github repo (click settings, secrets, actions)
+8. Go to previously copied IPv4 DNS or address to see the live server!
+9. Run the down script to shut down the web server through ssh, or alternatively stop the instance.
 
 
 
