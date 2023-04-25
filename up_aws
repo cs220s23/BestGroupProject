@@ -1,0 +1,4 @@
+# launch redis first because the other containers depend on it
+docker run -d --network covid --name redis -v $(pwd)/data:/data redis 
+docker run -d --network covid --name collector collector
+docker run -d --network covid --name server -p 80:8000 server
