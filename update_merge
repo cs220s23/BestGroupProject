@@ -1,3 +1,4 @@
+cd /BestGroupProject
 ./down
 sudo git pull origin main
 docker build ./collector -t collector
