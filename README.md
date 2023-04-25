@@ -4,6 +4,7 @@
 * Rob
 * Jeremy
 * Zach
+
 This project is for a CI/CD pipeline
 
 Overview - Describe how project is
@@ -28,6 +29,16 @@ Steps:
 
 RUNNING WITH AWS-
 Steps:
+1. Specify a name for the machine
+2. Select vockey for the Key Pair
+3. Select "Allow HTTP traffic from the internet" under "Network settings"
+4. Under "Advanced details" in the "User data" section add contents of aws_user_data file
+5. Launch the instance!
+Due to the fact that we are running on temporary instances, another step is necessary
+6. Copy Public IPv4 DNS or address and update AWS_IP github repo variable to have deploy functionality
+7. Go to previously copied IPv4 DNS or address to see the live server!
+8. Run the down script to shut down the web server through ssh, or alternatively stop the instance.
+
 
 
 
@@ -43,4 +54,7 @@ BACKGROUND-
 1. GitHub Actions- https://github.com/features/actions
 2. SSH to an EC2 instance (AWS)- https://labs.vocareum.com/web/2275840/1605208.0/ASNLIB/public/docs/lang/en-us/README.html#ssh
 3. SSH on mac (AWS)- https://labs.vocareum.com/web/2275840/1605208.0/ASNLIB/public/docs/lang/en-us/README.html#sshmac
+4. GitHub Variables- https://docs.github.com/en/actions/learn-github-actions/variables
+5. GitHub Secrets- https://docs.github.com/en/actions/security-guides/encrypted-secrets
+6. Triggering workflows on merge- https://github.com/orgs/community/discussions/26724
 
