@@ -114,7 +114,7 @@ jobs:
       with:
         host: 54.227.15.208
         username: ec2-user
-        key: ${{ secrets.SSH_KEY }}
+        key: jkasdlfl;ijadkg;laijsdflsjdkfsjld/n.jkads.fgnajfgl;ekr/jnflk/gvknSDFKL?SDM<V
         script: whoami
         
   close_job:
