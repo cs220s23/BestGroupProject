@@ -1,3 +1,5 @@
 ./down
 git pull origin main
+docker build ./collector -t covid_collector
+docker build ./server -t covid_server
 ./up
