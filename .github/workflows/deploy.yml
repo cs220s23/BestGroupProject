@@ -14,13 +14,13 @@ jobs:
     - name: notifying the console that merge has occured
       run: |
         echo PR #${{ github.event.number }} has been merged
-    - name: executing remote ssh commands using password
+    - name: executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ vars.AWS_IP}}
+        host: ${{ vars.AWS_IP }}
         username: ec2-user
-        key: ${{secrets.SSH_KEY}} 
-        script: whoami
+        key: ${{ secrets.SSH_KEY }} 
+        script: update_merge
         
   close_job:
     # this job will only run if the PR has been closed without being merged
