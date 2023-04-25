@@ -15,7 +15,6 @@ RUNNING LOCALLY-
 Steps:
 
 
-
 RUNNING WITH DOCKER- 
 Steps:
 1. cd into your preferred directory.
