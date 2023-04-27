@@ -12,7 +12,7 @@ dotenv.load_dotenv()
 host = os.getenv('REDIS_HOST')
 port = os.getenv('REDIS_PORT')
 
-r = redis.Redis(host=host, port=port)
+r = redis.Redis(host=host, port=port) # type: ignore
 
 while True:
     URL = 'https://data.cdc.gov/resource/9mfq-cb36.json'
@@ -24,3 +24,4 @@ while True:
     # Flush the buffer to ensure it is printed immediately
     print(f'Saved {confirmed}. Sleeping for 15 minutes', flush=True)
     time.sleep(15 * 60)
+    
