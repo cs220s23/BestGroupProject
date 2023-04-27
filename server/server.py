@@ -34,9 +34,7 @@ def home():
     count = read_count()    
     count += 1
     save_count(count);
-	
-    return "<h1 style='font-size:{}vw'>confirmed: {}</h1>".format(count,confirmed)
-
+    return "<h1 style='color:green; font-size:{}vw'>confirmed:{}</h1>".format(count,confirmed)
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8000)
