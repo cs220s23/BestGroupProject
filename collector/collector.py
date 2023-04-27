@@ -15,6 +15,7 @@ port = os.getenv('REDIS_PORT')
 
 r = redis.Redis(host=host, port=port) # type: ignore
 
+
 while True:
     URL = 'https://data.cdc.gov/resource/9mfq-cb36.json'
     results = requests.get(URL, timeout=10).json()
