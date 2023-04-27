@@ -17,9 +17,9 @@ r = redis.Redis(host=host, port=port) # type: ignore
 
 while True:
     URL = 'https://data.cdc.gov/resource/9mfq-cb36.json'
-    results = requests.get(URL).json()
+    results = requests.get(URL, timeout=10).json()
 
-    confirmed = sum([int(result['tot_cases']) for result in results])
+    confirmed = sum(int(result['tot_cases']) for result in results)
 
     r.set('confirmed', confirmed)
     # Flush the buffer to ensure it is printed immediately
