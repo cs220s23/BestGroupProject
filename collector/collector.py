@@ -15,8 +15,8 @@ port = os.getenv('REDIS_PORT')
 r = redis.Redis(host=host, port=port)
 
 while True:
-    url = 'https://data.cdc.gov/resource/9mfq-cb36.json'
-    results = requests.get(url).json()
+    URL = 'https://data.cdc.gov/resource/9mfq-cb36.json'
+    results = requests.get(URL).json()
 
     confirmed = sum([int(result['tot_cases']) for result in results])
 
