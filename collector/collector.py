@@ -7,6 +7,7 @@ import requests
 import redis
 import dotenv
 
+
 dotenv.load_dotenv()
 
 host = os.getenv('REDIS_HOST')
@@ -24,4 +25,3 @@ while True:
     # Flush the buffer to ensure it is printed immediately
     print(f'Saved {confirmed}. Sleeping for 15 minutes', flush=True)
     time.sleep(15 * 60)
-    
