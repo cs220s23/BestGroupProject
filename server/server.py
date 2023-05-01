@@ -16,6 +16,12 @@ port = os.getenv('REDIS_PORT')
 
 r = redis.Redis(host=host, port=port) # type: ignore
 
+def is_even(count):
+    """
+    Checks to see if count is even
+    """
+    return count % 2 == 0
+
 def read_count():
     """
     This is the read count function which reads the count from the file, and returns the count,
@@ -46,8 +52,12 @@ def home():
     count = read_count()
     count += 1
     save_count(count)
+    if is_even(count):
+        color = 'blue'
+    else:
+        color = 'red'
 
-    return f"<h1 style='font-size:{count}vw'>confirmed: {confirmed}</h1>"
+    return f"<h1 style='font-size:{count}vw;color:{color}'>confirmed: {confirmed}</h1>"
 
 
 if __name__ == '__main__':
