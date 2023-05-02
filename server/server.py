@@ -20,7 +20,7 @@ def is_even(count):
     """
     Checks to see if count is even
     """
-    return count % 2 == 1
+    return count % 2 == 0
 
 def read_count():
     """
